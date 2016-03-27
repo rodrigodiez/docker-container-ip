@@ -8,4 +8,6 @@ go install github.com/rodrigodiez/docker-container-ip
 ```
 
 # usage
+```
 docker-container-ip <container name/id>
+```

@@ -22,7 +22,7 @@ func main() {
 	container, err := cli.ContainerInspect(context.Background(), os.Args[1])
 	checkErr(err)
 
-	fmt.Printf("%v\n", container.NetworkSettings.DefaultNetworkSettings.IPAddress)
+	fmt.Printf("%s", container.NetworkSettings.DefaultNetworkSettings.IPAddress)
 }
 
 func checkErr(err error) {
